@@ -70,7 +70,7 @@ export const Hero = component$(() => {
                             </a>
                         </div>
                     </div>
-                    <div class="hidden lg:mt-0 lg:col-span-5 lg:flex self-center">
+                    <div class="hidden lg:mt-0 lg:col-span-5 lg:flex self-center p-5">
                         <img
                             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
                             alt="mockup"
