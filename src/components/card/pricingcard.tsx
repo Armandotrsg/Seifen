@@ -25,7 +25,7 @@ export const PricingCard = component$(() => {
         );
     };
     return (
-        <div class="w-full mx-auto max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <div class="w-full mx-auto max-w-sm p-4 bg-slate-50 border border-gray-200 rounded-lg shadow-lg shadow-gray-400 dark:shadow-black sm:p-8 dark:bg-gray-800 dark:border-gray-700">
             <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
                 Detergente Seifen
             </h5>

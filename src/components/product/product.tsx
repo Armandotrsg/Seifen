@@ -3,7 +3,7 @@ import { PricingCard } from "../card/pricingcard";
 
 export const Product = component$(() => {
     return(
-        <section class="grid grid-cols-12 p-10 gap-4">
+        <section class="grid grid-cols-12 p-10 gap-4 ">
             <div class="col-span-12 md:col-span-5 self-center justify-center items-center order-last md:order-first">
                 <div class={"w-full"}>
                     <PricingCard />
