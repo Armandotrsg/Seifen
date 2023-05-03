@@ -3,6 +3,7 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 import { Hero } from '~/components/hero/hero';
 import { MainDescription } from '~/components/maindescription/maindescription';
 import { CardSection } from '~/components/card/cardsection';
+import { Product } from '~/components/product/product';
 
 export default component$(() => {
   return (
@@ -10,6 +11,7 @@ export default component$(() => {
       <Hero />
       <MainDescription />
       <CardSection />
+      <Product />
     </>
   );
 });
