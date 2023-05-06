@@ -9,17 +9,47 @@
 @layer base {
     body {
         @apply bg-white dark:bg-gray-800;
+        background-image: linear-gradient(100deg, #e3fdf5 0%, #ffe6fa 100%);
     }
 
-    /* .bg-gradient-hero{
-        background-image: radial-gradient(70% 30% at 50% 0,#fff 60%,transparent),radial-gradient(50% 50% at 50% 10%,#fff 30%,transparent),radial-gradient(84.51% 92.7% at 106.7% 103.96%,#9cdaf0 40.17%,#cbd0fe 100%);
+    .bg-gradient-hero {
+        background: #d5f8ff;
+        background: radial-gradient(at left top, #d5f8ff, #fff3cf);
     }
 
-    .bg-gradient-hero-dark {
-        background-image: linear-gradient(178.46deg,rgba(191,209,237,.075) .83%,rgba(191,209,237,.25) 97.44%);
-    } */
+    .bg-gradient-card {
+        background-image: radial-gradient(
+                70% 30% at 50% 0,
+                #fff 60%,
+                transparent
+            ),
+            radial-gradient(50% 50% at 50% 10%, #fff 30%, transparent),
+            radial-gradient(
+                84.51% 92.7% at 106.7% 103.96%,
+                #9cdaf0 40.17%,
+                #cbd0fe 100%
+            );
+    }
 
-    .bg-gradient-shore {
-        background-image: linear-gradient( 109.6deg,  rgba(254,253,205,1) 11.2%, rgba(163,230,255,1) 91.1% );
+    @media (prefers-color-scheme: dark) {
+        .bg-gradient-card {
+            background: linear-gradient(
+                0deg,
+                rgb(20, 30, 48) 11.2%,
+                rgb(28, 45, 66) 91.1%
+            );
+        }
+        body {
+            background: linear-gradient(
+                109.6deg,
+                rgb(36, 45, 57) 11.2%,
+                rgb(16, 37, 60) 51.2%,
+                rgb(0, 0, 0) 98.6%
+            );
+        }
+        .bg-gradient-hero {
+            background: #172757;
+            background: radial-gradient(at center top, #172757, #1c2837);
+        }
     }
 }
