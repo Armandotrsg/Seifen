@@ -6,7 +6,7 @@ export const Hero = component$(() => {
         return (
             <div class={"flex justify-center items-center lg:justify-start"}>
                 <Link
-                    href="#"
+                    href="#productos"
                     class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
                     role="alert"
                 >
@@ -45,7 +45,7 @@ export const Hero = component$(() => {
                         {/* Botones */}
                         <div class={"flex justify-center lg:justify-start"}>
                             <a
-                                href="#"
+                                href="#conocenos"
                                 class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
                             >
                                 Conoce más
@@ -63,7 +63,7 @@ export const Hero = component$(() => {
                                 </svg>
                             </a>
                             <a
-                                href="#"
+                                href="#contacto"
                                 class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
                             >
                                 Contáctanos

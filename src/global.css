@@ -8,13 +8,22 @@
 
 @layer base {
     body {
-        @apply bg-white dark:bg-gray-800;
-        background-image: linear-gradient(100deg, #e3fdf5 0%, #ffe6fa 100%);
+        @apply bg-white dark:bg-gray-800 scroll-smooth;
+        background: rgba(255, 172, 149, 1);
+        background: linear-gradient(
+            275deg,
+            rgba(255, 172, 149, 1),
+            rgba(255, 255, 255, 1)
+        );
     }
 
     .bg-gradient-hero {
-        background: #d5f8ff;
-        background: radial-gradient(at left top, #d5f8ff, #fff3cf);
+        background: rgba(229, 80, 39, 1);
+        background: linear-gradient(
+            270deg,
+            rgba(229, 80, 39, 1),
+            rgba(160, 239, 239, 1)
+        );
     }
 
     .bg-gradient-card {

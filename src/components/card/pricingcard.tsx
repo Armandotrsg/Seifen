@@ -37,7 +37,9 @@ export const PricingCard = component$(() => {
                 </span>
             </div>
             <ul role="list" class="space-y-5 my-7">
-                <ListItem text="Unlimited projects" />
+                <ListItem text="Poder desengrasante" />
+                <ListItem text="Quita manchas" />
+                <ListItem text="Ultra concentrado" />
             </ul>
             <button
                 type="button"
