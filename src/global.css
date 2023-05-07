@@ -7,8 +7,11 @@
 @tailwind utilities;
 
 @layer base {
+    * {
+        @apply scroll-smooth;
+    }
     body {
-        @apply bg-white dark:bg-gray-800 scroll-smooth;
+        @apply bg-white dark:bg-gray-800;
         background: rgba(255, 172, 149, 1);
         background: linear-gradient(
             275deg,

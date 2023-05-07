@@ -1,11 +1,10 @@
 import { component$ } from "@builder.io/qwik";
-import { Link } from "@builder.io/qwik-city";
 
 export const Hero = component$(() => {
     const Badge = ({ badge, text }: { badge: string; text: string }) => {
         return (
             <div class={"flex justify-center items-center lg:justify-start"}>
-                <Link
+                <a
                     href="#productos"
                     class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
                     role="alert"
@@ -26,7 +25,7 @@ export const Hero = component$(() => {
                             clip-rule="evenodd"
                         ></path>
                     </svg>
-                </Link>
+                </a>
             </div>
         );
     };
