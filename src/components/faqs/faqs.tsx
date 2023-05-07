@@ -10,7 +10,7 @@ export const Faqs = component$(() => {
                     Preguntas Frecuentes
                 </h2>
             </div>
-            <div class="flex flex-col items-start px-10 justify-center w-full">
+            <form class="flex flex-col items-start px-10 justify-center w-full">
                 {
                     preguntas.map((pregunta, index) => {
                         return (
@@ -18,7 +18,7 @@ export const Faqs = component$(() => {
                         )
                     })
                 }
-            </div>
+            </form>
         </section>
     );
 });
