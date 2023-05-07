@@ -58,7 +58,7 @@ export const Footer = component$(() => {
                         </li>
                         <li class={"mt-[0.1rem]"}>
                             <a
-                                href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D523325378642%26data%3DAWAwPSLx6V0zZmOfjK1Go4WDNdze_1VeQZAGksgTM66uQlNxe2_7LUd-cswQIVWWTV7BxiD4wRQYBZo_x8J4XI0UA-tc3IFijzdq3dBX06NOn_c-R7KRg6_H8FLWkd9F1IfHKpQn1S1kbdlKYAYTuium_8DcaByzVNiZRKzDOPd3Sg3qkhdgQ4LrJVE71T6EQ9GPyJMsCR0EG3LVejkCIjMRIlAw2kF014GqH_c6HC1EdTw4LBWKA_z148dmoluNm5uFXn7uEU8xpJRQShRIdbsanaE6AW1zVsosWpojwk_1KZcDgkQ%26source%3DFB_Page%26app%3Dfacebook%26entry_point%3Dpage_cta&h=AT3DvJ1V5G5cyh4wy-nmX8ia4lxA267jg4HrB4zYW5f0BRFa3NY9kyV3oYOG96efjOQzzXiND0AJ2bpIBR-Arqjj3_6IS-pzl2hoZgo8q94joigrpnE0YOc9uEhkn5-TGzekidNO_-vmRwtQQW4Bs2r0c8m2c32lcZL5Vgo"
+                                href="https://api.whatsapp.com/send?phone=523325378642&data=AWAIJIlCBNivljyWglb4e51Wi6e9u_Z_AIiMYsYOZLqgJE6Dn-KDf2Dcv5WIC86isrXx2-vjEMs0DPb8FVYObBsEEQ_OJ-w7OmyDXz6jGXkU7DJMtkj1P85I7JUxAwSVBSc_u7MLNXBckrv6aMZwOem0A8jFWhxgWkiH1VSQr-DLkT5b1c4t-YLEG6NfFHEDU6K7ovSL07xIR05mUInO4_AkEcJFgdVnz51Ds8MmVaZRyZTwWOfLsu1vL1a-S0u6zcDIsYXRR6yk6y9xNFhfG_y88Y2B237pd5fgNFlPPw6c6Vs12OU&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR3Rq_iKwgR6SpXOaIe-XhsfuILqnEvNfjiYmY3u9wltNpooBZgjMj1oEBs"
                                 class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                             >
                                 <svg
