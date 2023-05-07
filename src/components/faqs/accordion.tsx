@@ -16,7 +16,7 @@ export const Accordion = component$(({question, answer}: preguntasProps) => {
                 </h1>
             </div>
             {/* Arrow */}
-            <div class="absolute top-3 right-3  dark:text-white transition-transform duration-500 rotate-90 dark:rotate-0 peer-checked:-rotate-90 dark:peer-checked:-rotate-180">
+            <div class="absolute top-6 md:top-5 right-3  dark:text-white transition-transform duration-500 rotate-90 dark:rotate-0 peer-checked:-rotate-90 dark:peer-checked:-rotate-180">
                 <img src={arrowWhite} alt="Arrow" class="w-6 h-6 hidden dark:block"/>
                 <img src={arrowBlack} alt="Arrow" class="w-6 h-6 block dark:hidden"/>
             </div>
