@@ -18,6 +18,12 @@ export const CardSection = component$(() => {
                         <div class={"col-span-12 sm:col-span-6 md:col-span-4 mx-auto sm:mx-0"}>
                             <Card image="" title={"Title"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi. Sed euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi."} />
                         </div>
+                        <div class={"col-span-12 sm:col-span-6 md:col-span-4 mx-auto sm:mx-0"}>
+                            <Card image="" title={"Title"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi. Sed euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi."} />
+                        </div>
+                        <div class={"col-span-12 sm:col-span-6 md:col-span-4 mx-auto sm:mx-0"}>
+                            <Card image="" title={"Title"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi. Sed euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi."} />
+                        </div>
                     </div>
                 </div>
             </div>
