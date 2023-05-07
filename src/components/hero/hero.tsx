@@ -31,7 +31,7 @@ export const Hero = component$(() => {
     };
     return (
         <>
-            <section class="bg-gradient-hero dark:bg-gray-900 rounded-xl">
+            <section class="bg-gradient-hero dark:bg-gray-900 ">
                 <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 h-[100vh] align-middle">
                     <div class="mx-auto lg:mr-auto place-self-center lg:col-span-7">
                         <Badge badge="Nuevo" text="Detergente Seifen" />

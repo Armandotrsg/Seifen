@@ -11,13 +11,7 @@
         @apply scroll-smooth;
     }
     body {
-        @apply bg-white dark:bg-gray-800;
-        background: rgba(255, 172, 149, 1);
-        background: linear-gradient(
-            275deg,
-            rgba(255, 172, 149, 1),
-            rgba(255, 255, 255, 1)
-        );
+        @apply bg-slate-100;
     }
 
     .bg-gradient-hero {
@@ -52,6 +46,7 @@
             );
         }
         body {
+            background-color: #172757;
             background: linear-gradient(
                 109.6deg,
                 rgb(36, 45, 57) 11.2%,
