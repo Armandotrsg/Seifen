@@ -31,11 +31,24 @@ module.exports = {
                     800: "#5c2010",
                     900: "#2e1008",
                 },
+                lightBlue: {
+                    100: "#ecfcfc",
+                    200: "#d9f9f9",
+                    300: "#c6f5f5",
+                    400: "#b3f2f2",
+                    500: "#a0efef",
+                    600: "#80bfbf",
+                    700: "#608f8f",
+                    800: "#406060",
+                    900: "#203030",
+                },
             },
             animation: {
                 "show-on-scroll-up": "show-on-scroll-up 1s ease-out forwards",
-                "show-on-scroll-left": "show-on-scroll-left 1s ease-out forwards",
-                "show-on-scroll-right": "show-on-scroll-right 1s ease-out forwards",
+                "show-on-scroll-left":
+                    "show-on-scroll-left 1s ease-out forwards",
+                "show-on-scroll-right":
+                    "show-on-scroll-right 1s ease-out forwards",
             },
             keyframes: {
                 "show-on-scroll-up": {
@@ -46,7 +59,7 @@ module.exports = {
                     "100%": {
                         opacity: 1,
                         transform: "translateY(0)",
-                    }
+                    },
                 },
                 "show-on-scroll-left": {
                     "0%": {
@@ -56,7 +69,7 @@ module.exports = {
                     "100%": {
                         opacity: 1,
                         transform: "translateX(0)",
-                    }
+                    },
                 },
                 "show-on-scroll-right": {
                     "0%": {
@@ -66,9 +79,9 @@ module.exports = {
                     "100%": {
                         opacity: 1,
                         transform: "translateX(0)",
-                    }
+                    },
                 },
-            }
+            },
         },
         fontFamily: {
             body: [

@@ -15,7 +15,7 @@ export const navigationTabs = [
         href: "#contacto",
     },
     {
-        name: "FAQs",
+        name: "FAQ's",
         href: "#faqs",
     },
 ];

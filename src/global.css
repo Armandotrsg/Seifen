@@ -10,7 +10,7 @@
     * {
         @apply scroll-smooth;
     }
-    body {
+    html, body {
         @apply bg-slate-100;
     }
 
@@ -45,7 +45,7 @@
                 rgb(28, 45, 66) 91.1%
             );
         }
-        body {
+        html, body {
             background-color: #172757;
             background: linear-gradient(
                 109.6deg,
