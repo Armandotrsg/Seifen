@@ -30,11 +30,15 @@ export const MainDescription = component$(() => {
                         class="w-full rounded-lg shadow-lg shadow-gray-800 dark:shadow-black"
                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
                         alt="office content 1"
+                        width={500}
+                        height={500}
                     />
                     <img
                         class="mt-4 w-full lg:mt-10 rounded-lg shadow-lg shadow-gray-800 dark:shadow-black"
                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
                         alt="office content 2"
+                        width={500}
+                        height={500}
                     />
                 </div>
             </div>
