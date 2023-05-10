@@ -8,6 +8,7 @@ export const Hero = component$(() => {
                     href="#productos"
                     class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
                     role="alert"
+                    aria-label="badge"
                 >
                     <span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">
                         {badge}
@@ -73,6 +74,8 @@ export const Hero = component$(() => {
                         <img
                             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
                             alt="mockup"
+                            width={500}
+                            height={500}
                         />
                     </div>
                 </div>
