@@ -31,6 +31,7 @@ export const Navbar = component$(() => {
             state.scrolled = false;
         }
     });
+
     return (
         <nav
             class={`${
