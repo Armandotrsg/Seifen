@@ -1,7 +1,15 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 import { PricingCard } from "../card/pricingcard";
 
 export const Product = component$(() => {
+    const animate = useSignal(false);
+
+    useVisibleTask$(() => {
+        setTimeout(() => {
+            animate.value = true;
+        } , 700);
+    })
+
     return(
         <section id="productos" class="grid grid-cols-12 p-10 gap-4 ">
             <div class="col-span-12 md:col-span-5 self-center justify-center items-center order-last md:order-first">
@@ -9,7 +17,7 @@ export const Product = component$(() => {
                     <PricingCard />
                 </div>
             </div>
-            <div class="col-span-12 md:col-span-7 order-first md:order-last">
+            <div class={`col-span-12 md:col-span-7 order-first md:order-last opacity-0 ${animate.value ? "transition-all animate-show-on-scroll-left" : ""}`}>
                 <h3 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 dark:text-white"> Compra Seifen </h3>
                 <p class="mb-6 text-lg font-medium text-gray-500 dark:text-gray-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.

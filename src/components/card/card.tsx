@@ -4,17 +4,20 @@ export type CardProps = {
     title: string;
     description: string;
     image: string;
+    index: number;
 };
 
-export const Card = component$(({ title, description }: CardProps) => {
+export const Card = component$(({ title, description, index }: CardProps) => {
     const animate = useSignal(false);
 
     useVisibleTask$(() => {
-        animate.value = true;
+        setTimeout(() => {
+            animate.value = true;
+        } , 400 + (300*(index + 1)));
     });
 
     return (
-        <div class="max-w-sm bg-slate-50 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+        <div class={`max-w-sm opacity-0 bg-slate-50 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 ${animate.value ? "transition-all animate-show-on-scroll-up" : ""}`}>
             <div>
                 <img
                     class="rounded-t-lg w-full h-72 md:h-52 object-cover"

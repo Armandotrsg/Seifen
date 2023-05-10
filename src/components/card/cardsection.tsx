@@ -16,13 +16,13 @@ export const CardSection = component$(() => {
                     </div>
                     <div class={"grid grid-cols-12 gap-4"}>
                         <div class={"col-span-12 sm:col-span-6 md:col-span-4 mx-auto sm:mx-0"}>
-                            <Card image="" title={"Title"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi. Sed euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi."} />
+                            <Card index={0} image="" title={"Title"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi. Sed euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi."} />
                         </div>
                         <div class={"col-span-12 sm:col-span-6 md:col-span-4 mx-auto sm:mx-0"}>
-                            <Card image="" title={"Title"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi. Sed euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi."} />
+                            <Card index={1} image="" title={"Title"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi. Sed euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi."} />
                         </div>
                         <div class={"col-span-12 sm:col-span-6 md:col-span-4 mx-auto sm:mx-0"}>
-                            <Card image="" title={"Title"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi. Sed euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi."} />
+                            <Card index={2} image="" title={"Title"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi. Sed euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi."} />
                         </div>
                     </div>
                 </div>

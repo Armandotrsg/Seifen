@@ -32,6 +32,43 @@ module.exports = {
                     900: "#2e1008",
                 },
             },
+            animation: {
+                "show-on-scroll-up": "show-on-scroll-up 1s ease-out forwards",
+                "show-on-scroll-left": "show-on-scroll-left 1s ease-out forwards",
+                "show-on-scroll-right": "show-on-scroll-right 1s ease-out forwards",
+            },
+            keyframes: {
+                "show-on-scroll-up": {
+                    "0%": {
+                        opacity: 0,
+                        transform: "translateY(20px)",
+                    },
+                    "100%": {
+                        opacity: 1,
+                        transform: "translateY(0)",
+                    }
+                },
+                "show-on-scroll-left": {
+                    "0%": {
+                        opacity: 0,
+                        transform: "translateX(20px)",
+                    },
+                    "100%": {
+                        opacity: 1,
+                        transform: "translateX(0)",
+                    }
+                },
+                "show-on-scroll-right": {
+                    "0%": {
+                        opacity: 0,
+                        transform: "translateX(-20px)",
+                    },
+                    "100%": {
+                        opacity: 1,
+                        transform: "translateX(0)",
+                    }
+                },
+            }
         },
         fontFamily: {
             body: [
