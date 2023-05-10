@@ -47,6 +47,8 @@ export const Navbar = component$(() => {
                         src={logo}
                         class="h-8 mr-3"
                         alt="Seifen Logo"
+                        width={32}
+                        height={32}
                     />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                         Seifen
@@ -96,7 +98,8 @@ export const Navbar = component$(() => {
                         <li key={index}>
                           <a
                                 href={tab.href}
-                                class="block py-2 pl-3 pr-4 dark:text-white bg-transparent hover:bg-primary-500 md:hover:bg-transparent rounded md:bg-transparent md:p-0 md:hover:text-secondary-700"
+                                class="block py-2 pl-3 pr-4 dark:text-white bg-transparent hover:bg-primary-500 md:hover:bg-transparent rounded md:bg-transparent md:p-0 md:hover:text-secondary-500"
+                                onClick$={() => (state.open = false)}
                             >
                                 {tab.name}
                             </a>

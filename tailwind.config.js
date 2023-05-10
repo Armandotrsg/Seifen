@@ -1,52 +1,74 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}', "./node_modules/flowbite/**/*.js"],
-  darkMode: 'media',
-  theme: {
-    extend: {
-      colors: {
-        primary: {"50":"#ecfeff","100":"#cffafe","200":"#a5f3fc","300":"#67e8f9","400":"#22d3ee","500":"#06b6d4","600":"#0891b2","700":"#0e7490","800":"#155e75","900":"#164e63"},
-        secondary: {"700": "#E55027", "800": "#A43A1C"},
-      }
+    content: [
+        "./src/**/*.{js,ts,jsx,tsx,mdx}",
+        "./node_modules/flowbite/**/*.js",
+    ],
+    darkMode: "media",
+    theme: {
+        extend: {
+            colors: {
+                primary: {
+                    50: "#ecfeff",
+                    100: "#cffafe",
+                    200: "#a5f3fc",
+                    300: "#67e8f9",
+                    400: "#22d3ee",
+                    500: "#06b6d4",
+                    600: "#0891b2",
+                    700: "#0e7490",
+                    800: "#155e75",
+                    900: "#164e63",
+                },
+                secondary: {
+                    100: "#fadcd4",
+                    200: "#f5b9a9",
+                    300: "#ef967d",
+                    400: "#ea7352",
+                    500: "#e55027",
+                    600: "#b7401f",
+                    700: "#893017",
+                    800: "#5c2010",
+                    900: "#2e1008",
+                },
+            },
+        },
+        fontFamily: {
+            body: [
+                "Inter",
+                "ui-sans-serif",
+                "system-ui",
+                "-apple-system",
+                "system-ui",
+                "Segoe UI",
+                "Roboto",
+                "Helvetica Neue",
+                "Arial",
+                "Noto Sans",
+                "sans-serif",
+                "Apple Color Emoji",
+                "Segoe UI Emoji",
+                "Segoe UI Symbol",
+                "Noto Color Emoji",
+            ],
+            sans: [
+                "Inter",
+                "ui-sans-serif",
+                "system-ui",
+                "-apple-system",
+                "system-ui",
+                "Segoe UI",
+                "Roboto",
+                "Helvetica Neue",
+                "Arial",
+                "Noto Sans",
+                "sans-serif",
+                "Apple Color Emoji",
+                "Segoe UI Emoji",
+                "Segoe UI Symbol",
+                "Noto Color Emoji",
+            ],
+        },
     },
-    fontFamily: {
-      'body': [
-    'Inter', 
-    'ui-sans-serif', 
-    'system-ui', 
-    '-apple-system', 
-    'system-ui', 
-    'Segoe UI', 
-    'Roboto', 
-    'Helvetica Neue', 
-    'Arial', 
-    'Noto Sans', 
-    'sans-serif', 
-    'Apple Color Emoji', 
-    'Segoe UI Emoji', 
-    'Segoe UI Symbol', 
-    'Noto Color Emoji'
-  ],
-      'sans': [
-    'Inter', 
-    'ui-sans-serif', 
-    'system-ui', 
-    '-apple-system', 
-    'system-ui', 
-    'Segoe UI', 
-    'Roboto', 
-    'Helvetica Neue', 
-    'Arial', 
-    'Noto Sans', 
-    'sans-serif', 
-    'Apple Color Emoji', 
-    'Segoe UI Emoji', 
-    'Segoe UI Symbol', 
-    'Noto Color Emoji'
-  ]
-    }
-  },
-  plugins: [
-    require('flowbite/plugin')
-  ]
+    plugins: [require("flowbite/plugin")],
 };
