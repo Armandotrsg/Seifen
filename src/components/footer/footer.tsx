@@ -8,7 +8,7 @@ export const Footer = component$(() => {
             <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div class="sm:flex sm:items-center sm:justify-between">
                     <a href="/" class="flex items-center mb-4 sm:mb-0">
-                        <img src={logo} class="h-8 mr-3" alt="Seifen Logo" />
+                        <img src={logo} class="h-8 mr-3" alt="Seifen Logo" width={32} height={32} />
                         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                             Seifen
                         </span>
@@ -35,6 +35,7 @@ export const Footer = component$(() => {
                         </a>
                         . Todos los derechos reservados.
                     </span>
+                    {/* Redes Sociales */}
                     <ul class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                         <li>
                             <a
@@ -46,6 +47,7 @@ export const Footer = component$(() => {
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
+                                    aria-label="Facebook"
                                 >
                                     <path
                                         fill-rule="evenodd"
@@ -75,6 +77,7 @@ export const Footer = component$(() => {
                                     xml:space="preserve"
                                     width="512"
                                     height="512"
+                                    aria-label="Whatsapp"
                                 >
                                     <g id="WA_Logo">
                                         <g>
@@ -85,7 +88,7 @@ export const Footer = component$(() => {
                                         </g>
                                     </g>
                                 </svg>
-                                <span class="sr-only">Instagram page</span>
+                                <span class="sr-only">Whatsapp page</span>
                             </a>
                         </li>
                     </ul>

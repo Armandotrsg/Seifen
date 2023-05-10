@@ -2,22 +2,23 @@ import { $, component$, useStore } from "@builder.io/qwik";
 import logo from "../../assets/logo.jpg";
 
 export const navigationTabs = [
-  {
-    name: "Conócenos",
-    href: "#conocenos",
-  },
-  {
-    name: "Productos",
-    href: "#productos",
-  }, {
-    name: "Contacto",
-    href: "#contacto",
-  },
-  {
-    name: "FAQs",
-    href: "#faqs",
-  }
-]
+    {
+        name: "Conócenos",
+        href: "#conocenos",
+    },
+    {
+        name: "Productos",
+        href: "#productos",
+    },
+    {
+        name: "Contacto",
+        href: "#contacto",
+    },
+    {
+        name: "FAQs",
+        href: "#faqs",
+    },
+];
 
 export const Navbar = component$(() => {
     const state = useStore({
@@ -55,11 +56,18 @@ export const Navbar = component$(() => {
                     </span>
                 </a>
                 <div class="flex md:order-2">
-                    <a
+                    {/* <a
                         href="#productos"
-                        class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-orange-700 dark:hover:bg-orange-900 dark:focus:ring-orange-800"
                     >
                         ¡Ordena ya!
+                    </a> */}
+                    <a
+                        href="#productos"
+                        class="mr-2 md:mr-0 rounded-md text-sm text-center px-4 py-2 overflow-hidden group text-white bg-primary-700 dark:bg-orange-700 relative hover:bg-gradient-to-r hover:from-primary-500 dark:hover:from-orange-500 hover:to-primary-400 dark:hover:to-orange-400 hover:ring-2 hover:ring-offset-2 hover:ring-primary-400 dark:hover:ring-orange-400 transition-all ease-out duration-300"
+                    >
+                        <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                        <span class="">¡Ordena ya!</span>
                     </a>
                     <button
                         data-collapse-toggle="navbar-sticky"
@@ -92,19 +100,23 @@ export const Navbar = component$(() => {
                     id="navbar-sticky"
                 >
                     <ul
-                        class={`flex flex-col p-4 md:p-0 mt-4 font-medium border border-slate-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 duration-300 ease-in-out ${state.scrolled ? "bg-transparent" : "bg-slate-100 md:bg-transparent dark:bg-gray-800"} dark:border-gray-700`}
+                        class={`flex flex-col p-4 md:p-0 mt-4 font-medium border border-slate-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 duration-300 ease-in-out ${
+                            state.scrolled
+                                ? "bg-transparent"
+                                : "bg-slate-100 md:bg-transparent dark:bg-gray-800"
+                        } dark:border-gray-700`}
                     >
-                      {navigationTabs.map((tab, index) => (
-                        <li key={index}>
-                          <a
-                                href={tab.href}
-                                class="block py-2 pl-3 pr-4 dark:text-white bg-transparent hover:bg-primary-500 md:hover:bg-transparent rounded md:bg-transparent md:p-0 md:hover:text-secondary-500"
-                                onClick$={() => (state.open = false)}
-                            >
-                                {tab.name}
-                            </a>
-                        </li>
-                      ))}
+                        {navigationTabs.map((tab, index) => (
+                            <li key={index}>
+                                <a
+                                    href={tab.href}
+                                    class="block py-2 pl-3 pr-4 dark:text-white bg-transparent hover:bg-primary-500 md:hover:bg-transparent rounded md:bg-transparent md:p-0 md:hover:text-secondary-500"
+                                    onClick$={() => (state.open = false)}
+                                >
+                                    {tab.name}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>
