@@ -8,6 +8,7 @@ import { Contact } from "~/components/forms/contact";
 import { Faqs } from "~/components/faqs/faqs";
 
 export const useSendEmail = routeAction$(async (message) => {
+    let success = null;
     console.log(message);
     fetch("https://formsubmit.co/ajax/mandotrsg@gmail.com", {
       method: "POST",
@@ -23,10 +24,14 @@ export const useSendEmail = routeAction$(async (message) => {
       .then((response) => response.json())
       .then((data) => {
           console.log("Success:", data);
+          success = data.success;
       })
       .catch((error) => {
           console.error("Error:", error);
+          success = false;
       });
+    return success;
+
 });
 
 export default component$(() => {

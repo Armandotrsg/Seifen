@@ -77,6 +77,9 @@ export const Contact = component$(() => {
                         Send message
                     </button>
                 </Form>
+                {sendEmail.value && (
+                    <p class="text-center text-green-500"> Email enviado con éxito</p>
+                )}
             </div>
         </section>
     );
