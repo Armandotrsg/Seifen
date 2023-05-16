@@ -9,6 +9,7 @@ export const Contact = component$(() => {
         message: "",
     });
     const sendEmail = useSendEmail();
+
     return (
         <section id="contacto">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">

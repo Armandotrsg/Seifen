@@ -34,7 +34,7 @@ export const Hero = component$(() => {
         <>
             <section class="bg-gradient-hero dark:bg-gray-900 ">
                 <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 h-[100vh] align-middle">
-                    <div class="mx-auto lg:mr-auto place-self-center lg:col-span-7">
+                    <div class="mx-auto lg:mr-auto place-self-center lg:col-span-7 ">
                         <Badge badge="Nuevo" text="Detergente Seifen" />
                         <h1 class="max-w-2xl text-center lg:text-start mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
                             Seifen
@@ -72,8 +72,9 @@ export const Hero = component$(() => {
                     </div>
                     <div class="hidden lg:mt-0 lg:col-span-5 lg:flex self-center p-5">
                         <img
-                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+                            src="https://cdn.leonardo.ai/users/d0aeb984-c4af-4b72-8169-e9ee28c833e5/generations/b6162319-6921-4e3e-ade3-7faeafead363/variations/Default_Variations_from_different_perspectives_including_right_2_b6162319-6921-4e3e-ade3-7faeafead363_0.png"
                             alt="mockup"
+                            class="object-cover relative z-10 aspect-auto object-center h-[37rem] w-full"
                             width={500}
                             height={500}
                         />

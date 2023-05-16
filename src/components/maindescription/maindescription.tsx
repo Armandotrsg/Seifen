@@ -12,30 +12,26 @@ export const MainDescription = component$(() => {
                         ¿Qué es Seifen?
                     </h2>
                     <p class="mb-4">
-                        We are strategists, designers and developers. Innovators
-                        and problem solvers. Small enough to be simple and
-                        quick, but big enough to deliver the scope you want at
-                        the pace you need. Small enough to be simple and quick,
-                        but big enough to deliver the scope you want at the pace
-                        you need.
+                        Seifen es un detergente ultra concentrado que ayuda a limpiar
+                        tu ropa de manera eficiente y especializado en ropa deportiva para dejarla
+                        libre de malos olores.
                     </p>
                     <p>
-                        We are strategists, designers and developers. Innovators
-                        and problem solvers. Small enough to be simple and
-                        quick.
+                        Seifen logra esto con una cantidad mínima de producto: por cada 10 mililitros de
+                        Seifen, es más poderoso que media taza de un detergente convencional.
                     </p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-8">
                     <img
-                        class="w-full rounded-lg shadow-lg shadow-gray-800 dark:shadow-black"
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+                        class="w-full rounded-lg shadow-lg shadow-gray-800 dark:shadow-black min-h-[19rem]"
+                        src="https://cdn.leonardo.ai/users/9e78c2c6-ea36-48f6-9a08-818b91f2533a/generations/5333d7f5-0336-467d-af7f-debedcd7ed45/variations/Default_A_small_pile_neatly_folded_clothes_recently_washed_nea_1_5333d7f5-0336-467d-af7f-debedcd7ed45_1.jpg"
                         alt="office content 1"
                         width={500}
                         height={500}
                     />
                     <img
-                        class="mt-4 w-full lg:mt-10 rounded-lg shadow-lg shadow-gray-800 dark:shadow-black"
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+                        class="mt-4 w-full lg:mt-10 rounded-lg shadow-lg  shadow-gray-800 dark:shadow-black min-h-[19rem]"
+                        src="https://cdn.leonardo.ai/users/9e78c2c6-ea36-48f6-9a08-818b91f2533a/generations/aa459d56-bb6d-4452-a990-f9df163995fc/variations/Default_A_cozy_laundry_room_filled_with_aesthetic_looking_wash_1_aa459d56-bb6d-4452-a990-f9df163995fc_1.jpg"
                         alt="office content 2"
                         width={500}
                         height={500}
