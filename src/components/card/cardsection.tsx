@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { Card } from "./card";
+import { CardsInfo } from "./cardsInfo";
 
 export const CardSection = component$(() => {
     return (
@@ -15,15 +16,15 @@ export const CardSection = component$(() => {
                         </p>
                     </div>
                     <div class={"grid grid-cols-12 gap-4"}>
-                        <div class={"col-span-12 sm:col-span-6 md:col-span-4 mx-auto sm:mx-0"}>
-                            <Card index={0} image="" title={"Title"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi. Sed euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi."} />
-                        </div>
-                        <div class={"col-span-12 sm:col-span-6 md:col-span-4 mx-auto sm:mx-0"}>
-                            <Card index={1} image="" title={"Title"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi. Sed euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi."} />
-                        </div>
-                        <div class={"col-span-12 sm:col-span-6 md:col-span-4 mx-auto sm:mx-0"}>
-                            <Card index={2} image="" title={"Title"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi. Sed euismod, urna id tempor sagittis, ipsum justo ultricies massa, sed ultricies turpis augue nec ipsum. Nulla facilisi."} />
-                        </div>
+                        {
+                            CardsInfo.map((card, index) => {
+                                return (
+                                    <div key={index} class={"col-span-12 sm:col-span-6 md:col-span-4 mx-auto sm:mx-0"}>
+                                        <Card  {...card} />
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>

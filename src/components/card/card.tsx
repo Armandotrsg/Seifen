@@ -7,7 +7,7 @@ export type CardProps = {
     index: number;
 };
 
-export const Card = component$(({ title, description, index }: CardProps) => {
+export const Card = component$(({ title, description, index, image }: CardProps) => {
     const animate = useSignal(false);
 
     useVisibleTask$(() => {
@@ -21,19 +21,19 @@ export const Card = component$(({ title, description, index }: CardProps) => {
             <div>
                 <img
                     class="rounded-t-lg w-full h-72 md:h-52 object-cover"
-                    src="https://images.unsplash.com/photo-1682809463394-b464a18a02ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                    src={image}
                     alt={title}
                     width={987}
                     height={557}
                 />
             </div>
-            <div class="p-5">
+            <div class="p-5 flex flex-col min-h-[15rem] max-h-[15rem]">
                 <div>
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 justify-center align-middle  dark:text-white">
                         {title}
                     </h5>
                 </div>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-md">
                     {description}
                 </p>
             </div>
