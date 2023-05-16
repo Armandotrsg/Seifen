@@ -9,6 +9,13 @@ export const PricingCard = component$(() => {
         }, 700);
     })
 
+    const List = () => [
+        "Poder desengrasante",
+        "Quita manchas",
+        "Elimina malos olores",
+        "Ultra concentrado",
+    ]
+
     const ListItem = ({ text }: { text: string }) => {
         return (
             <li class="flex space-x-3">
@@ -45,9 +52,9 @@ export const PricingCard = component$(() => {
                 </span>
             </div>
             <ul role="list" class="space-y-5 my-7">
-                <ListItem text="Poder desengrasante" />
-                <ListItem text="Quita manchas" />
-                <ListItem text="Ultra concentrado" />
+                {List().map((text, index) => (
+                    <ListItem key={index} text={text} />
+                ))}
             </ul>
             <a
                 href="#contacto"

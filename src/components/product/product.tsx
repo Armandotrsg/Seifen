@@ -20,7 +20,9 @@ export const Product = component$(() => {
             <div class={`col-span-12 md:col-span-7 order-first md:order-last opacity-0 ${animate.value ? "transition-all animate-show-on-scroll-left" : ""}`}>
                 <h3 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 dark:text-white"> Compra Seifen </h3>
                 <p class="mb-6 text-lg font-medium text-gray-500 dark:text-gray-400">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+                    Con Seifen puedes ahorrar más detergente y espacio en tu hogar, con tan solo 5ml de Seifen puedes lavar hasta 5kg de ropa.
+                    <br /> <br />
+                    Adquiere Seifen contactándonos en nuestras redes sociales o mándanos un correo llenando el formulario de contacto.
                 </p>
             </div>
         </section>
