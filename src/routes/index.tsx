@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { type DocumentHead, routeAction$ } from "@builder.io/qwik-city";
-import { Hero } from "~/components/hero/hero";
+import { Hero2 } from "~/components/hero/hero2";
 import { MainDescription } from "~/components/maindescription/maindescription";
 import { CardSection } from "~/components/card/cardsection";
 import { Product } from "~/components/product/product";
@@ -37,7 +37,7 @@ export const useSendEmail = routeAction$(async (message) => {
 export default component$(() => {
     return (
         <>
-            <Hero />
+            <Hero2 />
             <MainDescription />
             <CardSection />
             <Product />
