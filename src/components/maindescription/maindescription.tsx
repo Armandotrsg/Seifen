@@ -1,6 +1,14 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 
 export const MainDescription = component$(() => {
+    const animate = useSignal(false);
+
+    useVisibleTask$(() => {
+        setTimeout(() => {
+            animate.value = true;
+        } , 700);
+    })
+
     return (
         <section
             id="conocenos"
@@ -23,14 +31,14 @@ export const MainDescription = component$(() => {
                 </div>
                 <div class="grid sm:grid-cols-2 gap-4 mt-8">
                     <img
-                        class="w-full rounded-lg shadow-lg shadow-gray-800 dark:shadow-black min-h-[19rem] object-cover"
+                        class={`w-full rounded-lg shadow-lg shadow-gray-800 dark:shadow-black min-h-[19rem] object-cover opacity-0 ${animate.value ? "transition-all animate-show-on-scroll-up" : ""}`}
                         src="https://cdn.leonardo.ai/users/9e78c2c6-ea36-48f6-9a08-818b91f2533a/generations/5333d7f5-0336-467d-af7f-debedcd7ed45/variations/Default_A_small_pile_neatly_folded_clothes_recently_washed_nea_1_5333d7f5-0336-467d-af7f-debedcd7ed45_1.jpg"
                         alt="office content 1"
                         width={500}
                         height={500}
                     />
                     <img
-                        class="hidden sm:block mt-4 w-full lg:mt-10 rounded-lg shadow-lg  shadow-gray-800 dark:shadow-black min-h-[19rem] object-cover"
+                        class={`hidden sm:block mt-4 w-full lg:mt-10 rounded-lg shadow-lg  shadow-gray-800 dark:shadow-black min-h-[19rem] object-cover opacity-0 ${animate.value ? "transition-all animate-show-on-scroll-down" : ""}`}
                         src="https://cdn.leonardo.ai/users/9e78c2c6-ea36-48f6-9a08-818b91f2533a/generations/aa459d56-bb6d-4452-a990-f9df163995fc/variations/Default_A_cozy_laundry_room_filled_with_aesthetic_looking_wash_1_aa459d56-bb6d-4452-a990-f9df163995fc_1.jpg"
                         alt="office content 2"
                         width={500}
