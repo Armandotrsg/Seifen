@@ -16,13 +16,13 @@ export const CardsInfo: CardProps[] = [
         title: "Despercude la Ropa",
         description: "Seifen es capaz de dejar la ropa como nueva, quitando manchas de todo tipo de tejidos.",
         image: washingMachine,
-        alt: "Lavadora"
+        alt: "Lavadora blanca"
     },
     {
         index: 2,
         title: "Para todo tipo de ropa",
         description: "Úsalo para ropa blanca, de color, delicada, de bebé, etc. y Seifen dejará tu ropa como nueva.",
         image: clothes2,
-        alt: "Imagen de una pila de ropa"
+        alt: "Pila de ropa de colores"
     }
 ]
