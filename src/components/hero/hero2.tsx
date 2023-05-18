@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 export const Hero2 = component$(() => {
     return (
-        <section class="relative bg-[url(https://cdn.leonardo.ai/users/9e78c2c6-ea36-48f6-9a08-818b91f2533a/generations/a8f2a36c-3f0b-42cb-9fbb-59b283684203/variations/Default_A_cozy_and_aesthetic_looking_laundry_room_featuring_a_0_a8f2a36c-3f0b-42cb-9fbb-59b283684203_1.jpg)] bg-cover bg-center bg-no-repeat p-5 rounded-b-lg">
+        <section class={`relative bg-hero bg-cover bg-center bg-no-repeat p-5 rounded-b-lg`}>
             <div class="absolute inset-0 bg-slate-300/75 dark:bg-gray-800/75 sm:bg-transparent sm:from-slate-300/95 sm:to-slate-300/25 sm:bg-gradient-to-r dark:sm:from-gray-800/95 dark:sm:to-gray-800/25"></div>
 
             <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 flex h-screen items-center justify-center md:justify-start md:px-8">

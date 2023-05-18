@@ -10,8 +10,12 @@
     * {
         @apply scroll-smooth;
     }
-    html, body {
+    html, body, :root {
         @apply bg-slate-100;
+    }
+
+    .bg-hero {
+        background: url('/src/assets/heroImage.jpg');
     }
 
     .bg-gradient-hero {
@@ -45,7 +49,7 @@
                 rgb(28, 45, 66) 91.1%
             );
         }
-        html, body {
+        html, body, :root {
             background-color: #172757;
             background: linear-gradient(
                 109.6deg,
