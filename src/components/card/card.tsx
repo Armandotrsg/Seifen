@@ -5,9 +5,10 @@ export type CardProps = {
     description: string;
     image: string;
     index: number;
+    alt: string;
 };
 
-export const Card = component$(({ title, description, index, image }: CardProps) => {
+export const Card = component$(({ title, description, index, image, alt }: CardProps) => {
     const animate = useSignal(false);
 
     useVisibleTask$(() => {
@@ -22,7 +23,7 @@ export const Card = component$(({ title, description, index, image }: CardProps)
                 <img
                     class="rounded-t-lg w-full h-72 md:h-52 object-cover"
                     src={image}
-                    alt={title}
+                    alt={alt}
                     width={987}
                     height={557}
                 />
