@@ -1,37 +1,24 @@
 import { component$ } from "@builder.io/qwik";
-import { type DocumentHead, routeAction$ } from "@builder.io/qwik-city";
+import { type DocumentHead, globalAction$ } from "@builder.io/qwik-city";
 import { Hero2 } from "~/components/hero/hero2";
 import { MainDescription } from "~/components/maindescription/maindescription";
 import { CardSection } from "~/components/card/cardsection";
 import { Product } from "~/components/product/product";
 import { Contact } from "~/components/forms/contact";
 import { Faqs } from "~/components/faqs/faqs";
+import axios from "axios";
 
-export const useSendEmail = routeAction$(async (message) => {
-    let success = null;
-    console.log(message);
-    fetch("https://formsubmit.co/ajax/mandotrsg@gmail.com", {
-      method: "POST",
-      headers: { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-          name: message.subject,
-          message: `Email: ${message.email} \n ${message.message}`
-      })
-  })
-      .then((response) => response.json())
-      .then((data) => {
-          console.log("Success:", data);
-          success = data.success;
-      })
-      .catch((error) => {
-          console.error("Error:", error);
-          success = false;
-      });
-    return success;
+export const useSendEmail = globalAction$(async (message) => {
+    axios.defaults.headers.post["Content-Type"] = "application/json";
+    axios
+        .post("https://formsubmit.co/ajax/mandotrsg@gmail.com", {
+            name: message.subject,
+            message: message.message,
+        })
+        .then((response) => console.log("HURRAY", response))
+        .catch((error) => console.log(error));
 
+    return true;
 });
 
 export default component$(() => {
