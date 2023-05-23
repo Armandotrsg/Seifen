@@ -1,6 +1,4 @@
 import { component$, useStore } from "@builder.io/qwik";
-import { Form } from "@builder.io/qwik-city";
-import { useSendEmail } from "~/routes";
 
 export const Contact = component$(() => {
     const state = useStore({
@@ -8,7 +6,6 @@ export const Contact = component$(() => {
         subject: "",
         message: "",
     });
-    const sendEmail = useSendEmail();
 
     return (
         <section id="contacto">
@@ -19,18 +16,21 @@ export const Contact = component$(() => {
                 <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
                     ¿Quieres hacer un pedido? Contáctanos para tomarte la orden
                 </p>
-                <Form action={sendEmail} class="space-y-8">
+                <form action={"https://postmail.invotes.com/send"} method="POST" class="space-y-8">
+                    <input type="hidden" name="access_token" value="wunsatbq5e15ze32rfi32dk8" />
+                    <input type="hidden" name="success_url" value="." />
+                    <input type="hidden" name="error_url" value="." />    
                     <div>
                         <label
-                            for="email"
+                            for="reply_to"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                         >
                             Email*
                         </label>
                         <input
                             type="email"
-                            id="email"
-                            name="email"
+                            id="reply_to"
+                            name="reply_to"
                             class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                             placeholder="nombre@seifen.com"
                             required
@@ -54,16 +54,33 @@ export const Contact = component$(() => {
                             onChange$={(e) => (state.subject = e.target.value)}
                         />
                     </div>
+                    <div>
+                        <label
+                            for="extra_phone_number"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                        >
+                            Teléfono
+                        </label>
+                        <input
+                            type="tel"
+                            id="extra_phone_number"
+                            name="extra_phone_number"
+                            class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="Compártenos tu número de teléfono para contactarte"
+                            onChange$={(e) => (state.subject = e.target.value)}
+                            pattern="[0-9]{10}"
+                        />
+                    </div>
                     <div class="sm:col-span-2">
                         <label
-                            for="message"
+                            for="text"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
                         >
                             Mensaje*
                         </label>
                         <textarea
-                            id="message"
-                            name="message"
+                            id="text"
+                            name="text"
                             rows={6}
                             class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                             placeholder="Escribe tu mensaje..."
@@ -77,10 +94,7 @@ export const Contact = component$(() => {
                     >
                         Send message
                     </button>
-                </Form>
-                {sendEmail.value && (
-                    <p class="text-center text-green-500"> Email enviado con éxito</p>
-                )}
+                </form>
             </div>
         </section>
     );
