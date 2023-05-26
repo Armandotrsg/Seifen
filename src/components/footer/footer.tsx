@@ -60,7 +60,7 @@ export const Footer = component$(() => {
                         </li>
                         <li class={"mt-[0.1rem]"}>
                             <a
-                                href="https://api.whatsapp.com/send?phone=523325378642&data=AWAIJIlCBNivljyWglb4e51Wi6e9u_Z_AIiMYsYOZLqgJE6Dn-KDf2Dcv5WIC86isrXx2-vjEMs0DPb8FVYObBsEEQ_OJ-w7OmyDXz6jGXkU7DJMtkj1P85I7JUxAwSVBSc_u7MLNXBckrv6aMZwOem0A8jFWhxgWkiH1VSQr-DLkT5b1c4t-YLEG6NfFHEDU6K7ovSL07xIR05mUInO4_AkEcJFgdVnz51Ds8MmVaZRyZTwWOfLsu1vL1a-S0u6zcDIsYXRR6yk6y9xNFhfG_y88Y2B237pd5fgNFlPPw6c6Vs12OU&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR3Rq_iKwgR6SpXOaIe-XhsfuILqnEvNfjiYmY3u9wltNpooBZgjMj1oEBs"
+                                href="https://wa.me/message/366K4T6YXQVDE1"
                                 class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                             >
                                 <svg
