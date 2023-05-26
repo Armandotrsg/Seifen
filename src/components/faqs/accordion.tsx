@@ -15,7 +15,7 @@ export const Accordion = component$(({ question, answer, index }: preguntasProps
                 name={`question-${index}`}
             />
             <div class=" h-fit w-full p-5 md:p-3 flex items-center border-b-2 border-black dark:border-white">
-                <label class="text-2xl font-semibold dark:text-white" for={`question-${index}`}>
+                <label class="text-xl mr-3 font-semibold dark:text-white" for={`question-${index}`}>
                     {question}
                 </label>
             </div>
