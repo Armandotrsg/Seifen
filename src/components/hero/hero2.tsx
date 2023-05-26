@@ -2,7 +2,9 @@ import { component$ } from "@builder.io/qwik";
 
 export const Hero2 = component$(() => {
     return (
-        <section class={`relative bg-hero bg-cover bg-center bg-no-repeat p-5 rounded-b-lg`}>
+        <section
+            class={`relative bg-hero bg-cover bg-center bg-no-repeat p-5 rounded-b-lg`}
+        >
             <div class="absolute inset-0 bg-slate-300/75 dark:bg-gray-800/75 sm:bg-transparent sm:from-slate-300/95 sm:to-slate-300/25 sm:bg-gradient-to-r dark:sm:from-gray-800/95 dark:sm:to-gray-800/25"></div>
 
             <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 flex h-screen items-center justify-center md:justify-start md:px-8">
@@ -12,7 +14,8 @@ export const Hero2 = component$(() => {
                     </h1>
 
                     <p class="dark:text-white mt-4 max-w-lg md:text-xl/relaxed">
-                        Más poder desengrasante y de limpieza, con menos cantidad
+                        Detergente de ropa ultra concentrado. Especialista en
+                        ropa deportiva
                     </p>
 
                     <div class="mt-4 md:mt-8 flex flex-wrap gap-4 text-center justify-center md:justify-start">
