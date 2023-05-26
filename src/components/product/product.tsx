@@ -36,7 +36,7 @@ export const Product = component$(() => {
                     Adquiere Seifen contactándonos en nuestras redes sociales o
                     mándanos un correo llenando el formulario de contacto.
                 </p>
-                <span class="text-gray-400 text-sm">
+                <span class="text-gray-600 dark:text-gray-400 text-sm">
                     *Gastos de envío no incluidos
                 </span>
             </div>

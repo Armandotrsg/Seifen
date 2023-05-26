@@ -11,8 +11,8 @@ export const CardSection = component$(() => {
                         <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                             Seifen es más que un detergente
                         </h2>
-                        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vitae quas, eaque minima doloremque porro modi culpa fugiat nisi aliquid.
+                        <p class="font-light text-gray-800 sm:text-xl dark:text-gray-400">
+                            Seifen es un detergente ultra concentrado que te permite lavar más con menos.
                         </p>
                     </div>
                     <div class={"grid grid-cols-12 gap-4"}>
