@@ -14,6 +14,7 @@ export const PricingCard = component$(() => {
         "Quita manchas",
         "Elimina malos olores",
         "Ultra concentrado",
+        "Botella de 500ml",
     ]
 
     const ListItem = ({ text }: { text: string }) => {
