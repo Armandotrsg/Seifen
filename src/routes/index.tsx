@@ -3,7 +3,7 @@ import { type DocumentHead } from "@builder.io/qwik-city";
 import { Hero2 } from "~/components/hero/hero2";
 import { MainDescription } from "~/components/maindescription/maindescription";
 import { CardSection } from "~/components/card/cardsection";
-import { Comparative } from "~/components/product/comparative";
+// import { Comparative } from "~/components/product/comparative";
 import { Product } from "~/components/product/product";
 import { Contact } from "~/components/forms/contact";
 import { Faqs } from "~/components/faqs/faqs";
@@ -14,7 +14,7 @@ export default component$(() => {
             <Hero2 />
             <MainDescription />
             <CardSection />
-            <Comparative />
+            {/* <Comparative /> */}
             <Product />
             <Contact />
             <Faqs />
