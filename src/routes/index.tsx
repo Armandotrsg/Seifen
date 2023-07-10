@@ -27,7 +27,7 @@ export const head: DocumentHead = {
     meta: [
         {
             name: "description",
-            content: "Landing page para Seifen",
+            content: "Seifen, detergente ultra concentrado para ropa y quita grasas",
         },
     ],
 };

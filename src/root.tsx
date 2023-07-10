@@ -18,6 +18,7 @@ export default component$(() => {
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
         <meta name='Author' content='Seifen' />
+        <meta name="google-site-verification" content="-T_KS7_kJB9aKTjOkUoGHEiLwDz06tkD8eKVUmM2IfI" />
         <RouterHead />
       </head>
       <body lang="es">
