@@ -23,11 +23,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-    title: "Seifen",
+    title: "Seifen - detergente ultra concentrado para ropa deportiva",
     meta: [
         {
             name: "description",
-            content: "Seifen, detergente ultra concentrado para ropa y quita grasas",
+            content: "Seifen es un detergente ultra concentrado que elimina olores y grasa de la ropa deportiva. Mantén tu ropa fresca, limpia y sin manchas",
         },
     ],
 };
